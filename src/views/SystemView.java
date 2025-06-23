@@ -55,10 +55,6 @@ public class SystemView extends javax.swing.JFrame {
         jLabelSettings = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        btn_logout = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel4 = new javax.swing.JPanel();
         jPanel12 = new javax.swing.JPanel();
@@ -96,23 +92,68 @@ public class SystemView extends javax.swing.JFrame {
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
-        jTextField8 = new javax.swing.JTextField();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        txt_purchase_price = new javax.swing.JTextField();
+        txt_purchase_subtotal = new javax.swing.JTextField();
+        txt_purchase_id = new javax.swing.JTextField();
+        txt_purchase_total_to_pay = new javax.swing.JTextField();
+        btn_add_product_to_buy = new javax.swing.JButton();
+        btn_confirm_purchase = new javax.swing.JButton();
+        btn_remove_purchase = new javax.swing.JButton();
+        btn_new_purchase = new javax.swing.JButton();
         cmb_product_supplier = new javax.swing.JComboBox<>();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        purchases_table = new javax.swing.JTable();
         jPanel6 = new javax.swing.JPanel();
+        jPanel14 = new javax.swing.JPanel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        txt_customer_id = new javax.swing.JTextField();
+        txt_customer_fuliname = new javax.swing.JTextField();
+        txt_customer_address = new javax.swing.JTextField();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        txt_customer_telephone = new javax.swing.JTextField();
+        txt_customer_email = new javax.swing.JTextField();
+        btn_register_customer = new javax.swing.JButton();
+        btn_update_customer = new javax.swing.JButton();
+        btn_delete_customer = new javax.swing.JButton();
+        btn_cancel_customer = new javax.swing.JButton();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        customer_table = new javax.swing.JTable();
+        jLabel22 = new javax.swing.JLabel();
+        txt_search_customer = new javax.swing.JTextField();
         jPanel7 = new javax.swing.JPanel();
+        jPanel15 = new javax.swing.JPanel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        txt_purchse_product_code1 = new javax.swing.JTextField();
+        txt_purchase_product_name1 = new javax.swing.JTextField();
+        txt_purchase_product_amount1 = new javax.swing.JTextField();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        txt_purchase_price1 = new javax.swing.JTextField();
+        txt_purchase_subtotal1 = new javax.swing.JTextField();
+        txt_purchase_id1 = new javax.swing.JTextField();
+        txt_purchase_total_to_pay1 = new javax.swing.JTextField();
+        btn_add_product_to_buy1 = new javax.swing.JButton();
+        btn_confirm_purchase1 = new javax.swing.JButton();
+        btn_remove_purchase1 = new javax.swing.JButton();
+        btn_new_purchase1 = new javax.swing.JButton();
+        cmb_product_supplier1 = new javax.swing.JComboBox<>();
         jPanel8 = new javax.swing.JPanel();
         jPanel9 = new javax.swing.JPanel();
         jPanel10 = new javax.swing.JPanel();
         jPanel11 = new javax.swing.JPanel();
+        jPanel3 = new javax.swing.JPanel();
+        jButton1 = new javax.swing.JButton();
+        btn_logout = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jPanel16 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -326,29 +367,6 @@ public class SystemView extends javax.swing.JFrame {
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 200, 100));
 
-        jPanel3.setBackground(new java.awt.Color(18, 45, 61));
-        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/man.png"))); // NOI18N
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-        jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 20, 80, 65));
-
-        btn_logout.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        btn_logout.setText("salir");
-        jPanel3.add(btn_logout, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 35, -1, 30));
-
-        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Farmacia vida natural");
-        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, 340, 70));
-
-        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 0, 1010, 100));
-
         jPanel4.setBackground(new java.awt.Color(157, 202, 63));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -433,7 +451,7 @@ public class SystemView extends javax.swing.JFrame {
                     .addComponent(txt_product_description)
                     .addComponent(txt_product_id)
                     .addComponent(cmb_product_category, 0, 104, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 66, Short.MAX_VALUE)
                 .addGroup(jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btn_register_product, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btn_update_product, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -483,11 +501,11 @@ public class SystemView extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel4.add(jPanel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 20, 920, 270));
+        jPanel4.add(jPanel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 940, 270));
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel9.setText("buscar:");
-        jPanel4.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 320, -1, -1));
+        jPanel4.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 300, -1, 30));
 
         txt_search_product.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         txt_search_product.addActionListener(new java.awt.event.ActionListener() {
@@ -495,7 +513,7 @@ public class SystemView extends javax.swing.JFrame {
                 txt_search_productActionPerformed(evt);
             }
         });
-        jPanel4.add(txt_search_product, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 310, 160, 30));
+        jPanel4.add(txt_search_product, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 300, 160, 30));
 
         products_table.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         products_table.setModel(new javax.swing.table.DefaultTableModel(
@@ -511,7 +529,7 @@ public class SystemView extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(products_table);
 
-        jPanel4.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 350, 890, 180));
+        jPanel4.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 340, 940, 180));
 
         jTabbedPane1.addTab("producto", jPanel4);
 
@@ -563,52 +581,57 @@ public class SystemView extends javax.swing.JFrame {
         jLabel18.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel18.setText("total a pagar");
         jPanel13.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 210, -1, -1));
-        jPanel13.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 60, 120, -1));
-        jPanel13.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 110, 120, -1));
+        jPanel13.add(txt_purchase_price, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 60, 120, -1));
 
-        jTextField7.addActionListener(new java.awt.event.ActionListener() {
+        txt_purchase_subtotal.setEditable(false);
+        jPanel13.add(txt_purchase_subtotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 110, 120, -1));
+
+        txt_purchase_id.setEditable(false);
+        txt_purchase_id.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField7ActionPerformed(evt);
+                txt_purchase_idActionPerformed(evt);
             }
         });
-        jPanel13.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 160, 120, -1));
-        jPanel13.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 210, 120, -1));
+        jPanel13.add(txt_purchase_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 160, 120, -1));
 
-        jButton2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton2.setText("agregar");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        txt_purchase_total_to_pay.setEditable(false);
+        jPanel13.add(txt_purchase_total_to_pay, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 210, 120, -1));
+
+        btn_add_product_to_buy.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btn_add_product_to_buy.setText("agregar");
+        btn_add_product_to_buy.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btn_add_product_to_buyActionPerformed(evt);
             }
         });
-        jPanel13.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 60, -1, -1));
+        jPanel13.add(btn_add_product_to_buy, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 60, 100, -1));
 
-        jButton3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton3.setText("comprar");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        btn_confirm_purchase.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btn_confirm_purchase.setText("comprar");
+        btn_confirm_purchase.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                btn_confirm_purchaseActionPerformed(evt);
             }
         });
-        jPanel13.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 110, -1, -1));
+        jPanel13.add(btn_confirm_purchase, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 110, 100, -1));
 
-        jButton4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton4.setText("eliminar");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        btn_remove_purchase.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btn_remove_purchase.setText("eliminar");
+        btn_remove_purchase.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                btn_remove_purchaseActionPerformed(evt);
             }
         });
-        jPanel13.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 170, -1, -1));
+        jPanel13.add(btn_remove_purchase, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 160, 100, -1));
 
-        jButton5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton5.setText("nuevo");
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        btn_new_purchase.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btn_new_purchase.setText("cancelar");
+        btn_new_purchase.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                btn_new_purchaseActionPerformed(evt);
             }
         });
-        jPanel13.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 220, 90, -1));
+        jPanel13.add(btn_new_purchase, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 210, 100, -1));
 
         cmb_product_supplier.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         cmb_product_supplier.addActionListener(new java.awt.event.ActionListener() {
@@ -620,7 +643,7 @@ public class SystemView extends javax.swing.JFrame {
 
         jPanel5.add(jPanel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 920, 310));
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        purchases_table.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null},
                 {null, null, null, null, null, null},
@@ -631,34 +654,241 @@ public class SystemView extends javax.swing.JFrame {
                 "id", "nombre de producto", "cantidad", "precio", "subtotal", "proveedor"
             }
         ));
-        jScrollPane2.setViewportView(jTable1);
+        jScrollPane2.setViewportView(purchases_table);
+        if (purchases_table.getColumnModel().getColumnCount() > 0) {
+            purchases_table.getColumnModel().getColumn(5).setHeaderValue("proveedor");
+        }
 
-        jPanel5.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 370, 910, 160));
+        jPanel5.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 370, 920, 110));
 
         jTabbedPane1.addTab("compras", jPanel5);
 
-        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-        jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1010, Short.MAX_VALUE)
-        );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 545, Short.MAX_VALUE)
-        );
+        jPanel6.setBackground(new java.awt.Color(157, 202, 63));
+        jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel14.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "cliente", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
+        jPanel14.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel19.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel19.setText("identificación");
+        jPanel14.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, -1, -1));
+
+        jLabel20.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel20.setText("Nombre completo :");
+        jPanel14.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, -1, -1));
+
+        jLabel21.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel21.setText("Dirreción:");
+        jPanel14.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, -1, -1));
+
+        txt_customer_id.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_customer_idActionPerformed(evt);
+            }
+        });
+        jPanel14.add(txt_customer_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 60, 120, -1));
+        jPanel14.add(txt_customer_fuliname, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 110, 120, -1));
+        jPanel14.add(txt_customer_address, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 160, 120, -1));
+
+        jLabel23.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel23.setText("Telefono");
+        jPanel14.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 60, -1, -1));
+
+        jLabel24.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel24.setText("correo:");
+        jPanel14.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 110, -1, -1));
+        jPanel14.add(txt_customer_telephone, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 60, 120, -1));
+        jPanel14.add(txt_customer_email, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 110, 120, -1));
+
+        btn_register_customer.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btn_register_customer.setText("REGISTAR");
+        btn_register_customer.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_register_customerActionPerformed(evt);
+            }
+        });
+        jPanel14.add(btn_register_customer, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 60, 110, -1));
+
+        btn_update_customer.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btn_update_customer.setText("Modificar");
+        btn_update_customer.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_update_customerActionPerformed(evt);
+            }
+        });
+        jPanel14.add(btn_update_customer, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 110, 110, -1));
+
+        btn_delete_customer.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btn_delete_customer.setText("Eliminar");
+        btn_delete_customer.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_delete_customerActionPerformed(evt);
+            }
+        });
+        jPanel14.add(btn_delete_customer, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 160, 110, -1));
+
+        btn_cancel_customer.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btn_cancel_customer.setText("cancelar");
+        btn_cancel_customer.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_cancel_customerActionPerformed(evt);
+            }
+        });
+        jPanel14.add(btn_cancel_customer, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 210, 110, -1));
+
+        jPanel6.add(jPanel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 920, 270));
+
+        customer_table.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
+            },
+            new String [] {
+                "identificador", "nombre ", "telefono", "dirección", "correo"
+            }
+        ));
+        jScrollPane3.setViewportView(customer_table);
+
+        jPanel6.add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 380, 920, 110));
+
+        jLabel22.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel22.setText("buscar:");
+        jPanel6.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 320, -1, -1));
+
+        txt_search_customer.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        txt_search_customer.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_search_customerActionPerformed(evt);
+            }
+        });
+        jPanel6.add(txt_search_customer, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 310, 160, 30));
 
         jTabbedPane1.addTab("clientes", jPanel6);
+
+        jPanel7.setBackground(new java.awt.Color(157, 202, 63));
+
+        jPanel15.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "nueva compra", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12))); // NOI18N
+        jPanel15.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel25.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel25.setText("codigo de producto:");
+        jPanel15.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, -1, -1));
+
+        jLabel26.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel26.setText("Nombre del producto:");
+        jPanel15.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, -1, -1));
+
+        jLabel27.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel27.setText("cantidad:");
+        jPanel15.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, -1, -1));
+
+        jLabel28.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel28.setText("Proveedor:");
+        jPanel15.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, -1, -1));
+
+        txt_purchse_product_code1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_purchse_product_code1ActionPerformed(evt);
+            }
+        });
+        jPanel15.add(txt_purchse_product_code1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 60, 120, -1));
+
+        txt_purchase_product_name1.setEditable(false);
+        jPanel15.add(txt_purchase_product_name1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 110, 120, -1));
+        jPanel15.add(txt_purchase_product_amount1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 160, 120, -1));
+
+        jLabel29.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel29.setText("precio de compra:");
+        jPanel15.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 60, -1, -1));
+
+        jLabel30.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel30.setText("subtotal: ");
+        jPanel15.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 110, -1, -1));
+
+        jLabel31.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel31.setText("id:");
+        jPanel15.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 160, -1, -1));
+
+        jLabel32.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel32.setText("total a pagar");
+        jPanel15.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 210, -1, -1));
+        jPanel15.add(txt_purchase_price1, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 60, 120, -1));
+
+        txt_purchase_subtotal1.setEditable(false);
+        jPanel15.add(txt_purchase_subtotal1, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 110, 120, -1));
+
+        txt_purchase_id1.setEditable(false);
+        txt_purchase_id1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_purchase_id1ActionPerformed(evt);
+            }
+        });
+        jPanel15.add(txt_purchase_id1, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 160, 120, -1));
+
+        txt_purchase_total_to_pay1.setEditable(false);
+        jPanel15.add(txt_purchase_total_to_pay1, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 210, 120, -1));
+
+        btn_add_product_to_buy1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btn_add_product_to_buy1.setText("agregar");
+        btn_add_product_to_buy1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_add_product_to_buy1ActionPerformed(evt);
+            }
+        });
+        jPanel15.add(btn_add_product_to_buy1, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 60, 100, -1));
+
+        btn_confirm_purchase1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btn_confirm_purchase1.setText("comprar");
+        btn_confirm_purchase1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_confirm_purchase1ActionPerformed(evt);
+            }
+        });
+        jPanel15.add(btn_confirm_purchase1, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 110, 100, -1));
+
+        btn_remove_purchase1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btn_remove_purchase1.setText("eliminar");
+        btn_remove_purchase1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_remove_purchase1ActionPerformed(evt);
+            }
+        });
+        jPanel15.add(btn_remove_purchase1, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 160, 100, -1));
+
+        btn_new_purchase1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        btn_new_purchase1.setText("cancelar");
+        btn_new_purchase1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_new_purchase1ActionPerformed(evt);
+            }
+        });
+        jPanel15.add(btn_new_purchase1, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 210, 100, -1));
+
+        cmb_product_supplier1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cmb_product_supplier1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmb_product_supplier1ActionPerformed(evt);
+            }
+        });
+        jPanel15.add(cmb_product_supplier1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 210, 120, -1));
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
         jPanel7Layout.setHorizontalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1010, Short.MAX_VALUE)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGap(39, 39, 39)
+                .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, 920, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(51, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 545, Short.MAX_VALUE)
+            .addGroup(jPanel7Layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, 310, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(205, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Empleados", jPanel7);
@@ -715,7 +945,45 @@ public class SystemView extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("perfil", jPanel11);
 
-        getContentPane().add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 100, 1010, 580));
+        jPanel3.setBackground(new java.awt.Color(18, 45, 61));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/man.png"))); // NOI18N
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 20, 80, 65));
+
+        btn_logout.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        btn_logout.setText("salir");
+        jPanel3.add(btn_logout, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 35, -1, 30));
+
+        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("Farmacia vida natural");
+        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, 340, 70));
+
+        jTabbedPane1.addTab("tab9", jPanel3);
+
+        getContentPane().add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 100, 1010, 580));
+
+        jPanel16.setBackground(new java.awt.Color(18, 45, 61));
+
+        javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
+        jPanel16.setLayout(jPanel16Layout);
+        jPanel16Layout.setHorizontalGroup(
+            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1010, Short.MAX_VALUE)
+        );
+        jPanel16Layout.setVerticalGroup(
+            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        getContentPane().add(jPanel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 0, 1010, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -740,33 +1008,85 @@ public class SystemView extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btn_cancel_productActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btn_add_product_to_buyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_add_product_to_buyActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btn_add_product_to_buyActionPerformed
 
     private void txt_purchse_product_codeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_purchse_product_codeActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txt_purchse_product_codeActionPerformed
 
-    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
+    private void txt_purchase_idActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_purchase_idActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField7ActionPerformed
+    }//GEN-LAST:event_txt_purchase_idActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void btn_confirm_purchaseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_confirm_purchaseActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_btn_confirm_purchaseActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void btn_remove_purchaseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_remove_purchaseActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_btn_remove_purchaseActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void btn_new_purchaseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_new_purchaseActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_btn_new_purchaseActionPerformed
 
     private void cmb_product_supplierActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmb_product_supplierActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_cmb_product_supplierActionPerformed
+
+    private void txt_customer_idActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_customer_idActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_customer_idActionPerformed
+
+    private void btn_register_customerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_register_customerActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_register_customerActionPerformed
+
+    private void btn_update_customerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_update_customerActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_update_customerActionPerformed
+
+    private void btn_delete_customerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_delete_customerActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_delete_customerActionPerformed
+
+    private void btn_cancel_customerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_cancel_customerActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_cancel_customerActionPerformed
+
+    private void txt_search_customerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_search_customerActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_search_customerActionPerformed
+
+    private void btn_new_purchase1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_new_purchase1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_new_purchase1ActionPerformed
+
+    private void btn_remove_purchase1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_remove_purchase1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_remove_purchase1ActionPerformed
+
+    private void btn_confirm_purchase1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_confirm_purchase1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_confirm_purchase1ActionPerformed
+
+    private void btn_add_product_to_buy1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_add_product_to_buy1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_add_product_to_buy1ActionPerformed
+
+    private void txt_purchase_id1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_purchase_id1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_purchase_id1ActionPerformed
+
+    private void cmb_product_supplier1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmb_product_supplier1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cmb_product_supplier1ActionPerformed
+
+    private void txt_purchse_product_code1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_purchse_product_code1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_purchse_product_code1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -805,18 +1125,28 @@ public class SystemView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btn_add_product_to_buy;
+    private javax.swing.JButton btn_add_product_to_buy1;
+    public javax.swing.JButton btn_cancel_customer;
     public javax.swing.JButton btn_cancel_product;
+    private javax.swing.JButton btn_confirm_purchase;
+    private javax.swing.JButton btn_confirm_purchase1;
+    public javax.swing.JButton btn_delete_customer;
     public javax.swing.JButton btn_delete_product;
     private javax.swing.JButton btn_logout;
+    private javax.swing.JButton btn_new_purchase;
+    private javax.swing.JButton btn_new_purchase1;
+    public javax.swing.JButton btn_register_customer;
     public javax.swing.JButton btn_register_product;
+    private javax.swing.JButton btn_remove_purchase;
+    private javax.swing.JButton btn_remove_purchase1;
+    public javax.swing.JButton btn_update_customer;
     public javax.swing.JButton btn_update_product;
     public javax.swing.JComboBox<Object> cmb_product_category;
-    private javax.swing.JComboBox<String> cmb_product_supplier;
+    public javax.swing.JComboBox<String> cmb_product_supplier;
+    public javax.swing.JComboBox<String> cmb_product_supplier1;
+    public javax.swing.JTable customer_table;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -827,8 +1157,22 @@ public class SystemView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -848,6 +1192,9 @@ public class SystemView extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel13;
+    private javax.swing.JPanel jPanel14;
+    private javax.swing.JPanel jPanel15;
+    private javax.swing.JPanel jPanel16;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     public javax.swing.JPanel jPanel4;
@@ -866,21 +1213,35 @@ public class SystemView extends javax.swing.JFrame {
     public javax.swing.JPanel jPanelSuppliers;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTabbedPane jTabbedPane1;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
+    private javax.swing.JScrollPane jScrollPane3;
+    public javax.swing.JTabbedPane jTabbedPane1;
     public javax.swing.JTable products_table;
+    public javax.swing.JTable purchases_table;
+    public javax.swing.JTextField txt_customer_address;
+    public javax.swing.JTextField txt_customer_email;
+    public javax.swing.JTextField txt_customer_fuliname;
+    public javax.swing.JTextField txt_customer_id;
+    public javax.swing.JTextField txt_customer_telephone;
     public javax.swing.JTextField txt_product_code;
     public javax.swing.JTextField txt_product_description;
     public javax.swing.JTextField txt_product_id;
     public javax.swing.JTextField txt_product_name;
     public javax.swing.JTextField txt_product_unit_price;
-    private javax.swing.JTextField txt_purchase_product_amount;
-    private javax.swing.JTextField txt_purchase_product_name;
-    private javax.swing.JTextField txt_purchse_product_code;
+    public javax.swing.JTextField txt_purchase_id;
+    public javax.swing.JTextField txt_purchase_id1;
+    public javax.swing.JTextField txt_purchase_price;
+    public javax.swing.JTextField txt_purchase_price1;
+    public javax.swing.JTextField txt_purchase_product_amount;
+    public javax.swing.JTextField txt_purchase_product_amount1;
+    public javax.swing.JTextField txt_purchase_product_name;
+    public javax.swing.JTextField txt_purchase_product_name1;
+    public javax.swing.JTextField txt_purchase_subtotal;
+    public javax.swing.JTextField txt_purchase_subtotal1;
+    public javax.swing.JTextField txt_purchase_total_to_pay;
+    public javax.swing.JTextField txt_purchase_total_to_pay1;
+    public javax.swing.JTextField txt_purchse_product_code;
+    public javax.swing.JTextField txt_purchse_product_code1;
+    public javax.swing.JTextField txt_search_customer;
     private javax.swing.JTextField txt_search_product;
     // End of variables declaration//GEN-END:variables
 }
